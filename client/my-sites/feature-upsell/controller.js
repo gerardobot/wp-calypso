@@ -10,8 +10,9 @@ import page from 'page';
  * Internal Dependencies
  */
 import StoreUpsellComponent from './main';
+import WordAdsUpsellComponent from './ads-upsell';
 import { getSiteFragment } from 'lib/route';
-import { canCurrentUserUseStore } from 'state/sites/selectors';
+import { canCurrentUserUseStore, canCurrentUserUseAds } from 'state/sites/selectors';
 
 export default {
 	storeUpsell: function( context, next ) {
@@ -26,6 +27,20 @@ export default {
 
 		// Render
 		context.primary = React.createElement( StoreUpsellComponent );
+		next();
+	},
+	wordAdsUpsell: function( context, next ) {
+		const siteFragment = getSiteFragment( context.path );
+		if ( ! siteFragment ) {
+			return page.redirect( '/feature/ads' );
+		}
+
+		if ( canCurrentUserUseAds( context.store.getState() ) ) {
+			return page.redirect( '/ads/earnings' + siteFragment );
+		}
+
+		// Render
+		context.primary = React.createElement( WordAdsUpsellComponent );
 		next();
 	},
 };
