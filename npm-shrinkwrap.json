@@ -5,26 +5,55 @@
 	"requires": true,
 	"dependencies": {
 		"@automattic/simple-components": {
-			"version": "0.1.0-alpha.3",
-			"resolved": "https://registry.npmjs.org/@automattic/simple-components/-/simple-components-0.1.0-alpha.3.tgz",
-			"integrity": "sha1-5R7ue1DmWMBQVaHXWH5vldYYN5g=",
+			"version": "0.1.0-alpha.5",
+			"resolved": "https://registry.npmjs.org/@automattic/simple-components/-/simple-components-0.1.0-alpha.5.tgz",
+			"integrity": "sha512-h6npjBjdN/rihnkJgJHavE0hPicWk+EF+BPRtoQzSP36W5C3BPVSuDplAfOkcr01e40ARsHQidf2WVB9QyGwPQ==",
 			"requires": {
-				"classnames": "^2.2.5",
-				"lodash": "^4.17.4",
-				"prop-types": "^15.5.10",
-				"react": "^15.6.1"
+				"classnames": "1.1.1",
+				"lodash": "4.17.5",
+				"prop-types": "15.5.10",
+				"react": "16.3.1"
 			},
 			"dependencies": {
-				"react": {
-					"version": "15.6.2",
-					"resolved": "https://registry.npmjs.org/react/-/react-15.6.2.tgz",
-					"integrity": "sha1-26BDSrQ5z+gvEI8PURZjkIF5qnI=",
+				"classnames": {
+					"version": "1.1.1",
+					"resolved": "https://registry.npmjs.org/classnames/-/classnames-1.1.1.tgz",
+					"integrity": "sha1-Lluagh1sn8K5enM8VNnwV43v/8k="
+				},
+				"lodash": {
+					"version": "4.17.5",
+					"resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.5.tgz",
+					"integrity": "sha512-svL3uiZf1RwhH+cWrfZn3A4+U58wbP0tGVTLQPbjplZxZ8ROD9VLuNgsRniTlLe7OlSqR79RUehXgpBW/s0IQw=="
+				},
+				"prop-types": {
+					"version": "15.5.10",
+					"resolved": "https://registry.npmjs.org/prop-types/-/prop-types-15.5.10.tgz",
+					"integrity": "sha1-J5ffwxJhguOpXj37suiT3ddFYVQ=",
 					"requires": {
-						"create-react-class": "^15.6.0",
 						"fbjs": "^0.8.9",
+						"loose-envify": "^1.3.1"
+					}
+				},
+				"react": {
+					"version": "16.3.1",
+					"resolved": "https://registry.npmjs.org/react/-/react-16.3.1.tgz",
+					"integrity": "sha512-NbkxN9jsZ6+G+ICsLdC7/wUD26uNbvKU/RAxEWgc9kcdKvROt+5d5j2cNQm5PSFTQ4WNGsR3pa4qL2Q0/WSy1w==",
+					"requires": {
+						"fbjs": "^0.8.16",
 						"loose-envify": "^1.1.0",
-						"object-assign": "^4.1.0",
-						"prop-types": "^15.5.10"
+						"object-assign": "^4.1.1",
+						"prop-types": "^15.6.0"
+					},
+					"dependencies": {
+						"prop-types": {
+							"version": "15.6.2",
+							"resolved": "https://registry.npmjs.org/prop-types/-/prop-types-15.6.2.tgz",
+							"integrity": "sha512-3pboPvLiWD7dkI3qf3KbUe6hKFKa52w+AE0VCqECtf+QHAKgOL37tTaNCnuX1nAAQ4ZhyP+kYVKf8rLmJ/feDQ==",
+							"requires": {
+								"loose-envify": "^1.3.1",
+								"object-assign": "^4.1.1"
+							}
+						}
 					}
 				}
 			}
